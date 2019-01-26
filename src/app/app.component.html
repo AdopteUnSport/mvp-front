@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+    <div>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Adopte un sport</span>
+    </div>
+    <mat-form-field>
+      <input matInput placeholder="Recherche">
+    </mat-form-field>
+    
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="main">
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side">
+      <mat-list>
+        <mat-list-item> Feature 1 </mat-list-item>
+        <mat-list-item> Feature 2 </mat-list-item>
+        <mat-list-item> Feature 3 </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item> Collection 1 </mat-list-item>
+        <mat-list-item> Collection 2 </mat-list-item>
+        <mat-list-item> Collection 3 </mat-list-item>
+        <mat-divider></mat-divider>
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div id="map"></div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
