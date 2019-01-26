@@ -15,19 +15,62 @@
 <div class="main">
   <mat-sidenav-container>
     <mat-sidenav #sidenav mode="side">
-      <mat-list>
-        <mat-list-item> Feature 1 </mat-list-item>
-        <mat-list-item> Feature 2 </mat-list-item>
-        <mat-list-item> Feature 3 </mat-list-item>
+      <mat-list class="navigation">
+        <mat-list-item>
+          <h3 mat-line>Prenom NomUser</h3>
+          <p mat-line>adressemailuser@user.com</p>
+        </mat-list-item>
+        <mat-list-item routerLink="dashboard">
+            <mat-icon matListIcon>home</mat-icon>
+            <h4 mat-line>Accueil</h4> 
+        </mat-list-item>
         <mat-divider></mat-divider>
-        <mat-list-item> Collection 1 </mat-list-item>
-        <mat-list-item> Collection 2 </mat-list-item>
-        <mat-list-item> Collection 3 </mat-list-item>
+        <h3 mat-subheader>Recherches</h3>
+        <mat-list-item routerLink="sports">
+            <mat-icon matListIcon>fitness_center</mat-icon>
+            <h4 mat-line>Sports</h4> 
+        </mat-list-item>
+        <mat-list-item routerLink="etablissements">
+            <mat-icon matListIcon>location_city</mat-icon>
+            <h4 mat-line>Etablissements</h4>
+        </mat-list-item>
+        <mat-list-item routerLink="map"> 
+            <mat-icon matListIcon>map</mat-icon>
+            <h4 mat-line>Carte</h4>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <h3 mat-subheader>Mes groupes</h3>
+        <mat-list-item routerLink="etablissement/1">
+            <mat-icon matListIcon>group</mat-icon>
+            <h4 mat-line>Groupe 1</h4>
+        </mat-list-item>
+        <mat-list-item routerLink="etablissement/2">
+            <mat-icon matListIcon>group</mat-icon>
+            <h4 mat-line>Groupe 2</h4>
+        </mat-list-item>
+        <mat-list-item routerLink="etablissement/3"> 
+            <mat-icon matListIcon>group</mat-icon>
+            <h4 mat-line>Groupe 3</h4>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <h3 mat-subheader>Mes établissements</h3>
+        <mat-list-item>
+            <mat-icon matListIcon>domain</mat-icon>
+            <h4 mat-line>Etablissement 1</h4>
+        </mat-list-item>
+        <mat-list-item>
+            <mat-icon matListIcon>domain</mat-icon>
+            <h4 mat-line>Etablissement 2</h4>
+        </mat-list-item>
+        <mat-list-item> 
+            <mat-icon matListIcon>domain</mat-icon>
+            <h4 mat-line>Etablissement 3</h4>
+        </mat-list-item>
         <mat-divider></mat-divider>
       </mat-list>
     </mat-sidenav>
     <mat-sidenav-content>
-      <div id="map"></div>
+        <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

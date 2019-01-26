@@ -11,6 +11,7 @@ import {
   MatListModule,
   MatDividerModule,
   MatDatepickerModule,
+  MatGridListModule,
 
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -28,6 +29,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatDividerModule,
     MatDatepickerModule,
+    MatGridListModule,
     FlexLayoutModule,
   ],
   exports: [
@@ -42,6 +44,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatDividerModule,
     MatDatepickerModule,
+    MatGridListModule,
     FlexLayoutModule
   ]
 })
