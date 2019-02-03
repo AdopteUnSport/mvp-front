@@ -13,7 +13,6 @@ import {
   MatDatepickerModule,
   MatGridListModule,
   MatTabsModule,
-  MatRippleModule,
 
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -34,7 +33,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatGridListModule,
     FlexLayoutModule,
     MatTabsModule,
-    MatRippleModule,
   ],
   exports: [
     MatButtonModule,
@@ -51,7 +49,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatGridListModule,
     FlexLayoutModule,
     MatTabsModule,
-    MatRippleModule,
   ]
 })
 export class MaterialModule {}
