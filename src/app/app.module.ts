@@ -7,19 +7,23 @@ import { MaterialModule } from "./material/material.module";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RoutingModule } from './routing.module';
 import { RecipesComponent } from './recipes/recipes.component';
-import { MapComponent } from './map/map.component';
 import { FridgeComponent } from './fridge/fridge.component';
+import { FridgeContentComponent } from './fridge/fridge-content/fridge-content.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RecipeComponent } from './recipe/recipe.component';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { ScanComponent } from './scan/scan.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipesComponent,
-    MapComponent,
     FridgeComponent,
+    FridgeContentComponent,
     DashboardComponent,
-    RecipeComponent
+    RecipeComponent,
+    ShoppingComponent,
+    ScanComponent,
   ],
   imports: [
     BrowserModule,

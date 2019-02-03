@@ -5,7 +5,7 @@ import { FridgeComponent } from './fridge.component';
 @NgModule({
   declarations: [FridgeComponent],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class FridgeModule { }
