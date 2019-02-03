@@ -6,20 +6,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from "./material/material.module";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RoutingModule } from './routing.module';
-import { EtablissementsComponent } from './etablissements/etablissements.component';
+import { RecipesComponent } from './recipes/recipes.component';
 import { MapComponent } from './map/map.component';
-import { SportsComponent } from './sports/sports.component';
+import { FridgeComponent } from './fridge/fridge.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { EtablissementComponent } from './etablissement/etablissement.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EtablissementsComponent,
+    RecipesComponent,
     MapComponent,
-    SportsComponent,
+    FridgeComponent,
     DashboardComponent,
-    EtablissementComponent
+    RecipeComponent
   ],
   imports: [
     BrowserModule,

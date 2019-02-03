@@ -4,7 +4,7 @@
       <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
-      <span>Adopte un sport</span>
+      <span>Adopte un frigo</span>
     </div>
     <mat-form-field>
       <input matInput placeholder="Recherche">
@@ -25,46 +25,32 @@
             <h4 mat-line>Accueil</h4> 
         </mat-list-item>
         <mat-divider></mat-divider>
-        <h3 mat-subheader>Recherches</h3>
-        <mat-list-item routerLink="sports">
-            <mat-icon matListIcon>fitness_center</mat-icon>
-            <h4 mat-line>Sports</h4> 
+        <h3 mat-subheader>Ma bouffe</h3>
+        <mat-list-item routerLink="fridge">
+            <mat-icon matListIcon>kitchen</mat-icon>
+            <h4 mat-line>Mon frigo</h4> 
         </mat-list-item>
-        <mat-list-item routerLink="etablissements">
-            <mat-icon matListIcon>location_city</mat-icon>
-            <h4 mat-line>Etablissements</h4>
+        <mat-list-item routerLink="recipes">
+            <mat-icon matListIcon>restaurant</mat-icon>
+            <h4 mat-line>Recettes</h4>
         </mat-list-item>
         <mat-list-item routerLink="map"> 
-            <mat-icon matListIcon>map</mat-icon>
-            <h4 mat-line>Carte</h4>
+            <mat-icon matListIcon>crop_free</mat-icon>
+            <h4 mat-line>Scanner un reçu</h4>
         </mat-list-item>
         <mat-divider></mat-divider>
-        <h3 mat-subheader>Mes groupes</h3>
-        <mat-list-item routerLink="etablissement/1">
-            <mat-icon matListIcon>group</mat-icon>
-            <h4 mat-line>Groupe 1</h4>
+        <h3 mat-subheader>Mes recettes</h3>
+        <mat-list-item routerLink="recipe/1">
+            <mat-icon matListIcon>restaurant_menu</mat-icon>
+            <h4 mat-line>Recette 1</h4>
         </mat-list-item>
-        <mat-list-item routerLink="etablissement/2">
-            <mat-icon matListIcon>group</mat-icon>
-            <h4 mat-line>Groupe 2</h4>
+        <mat-list-item routerLink="recipe/2">
+            <mat-icon matListIcon>restaurant_menu</mat-icon>
+            <h4 mat-line>Recette 2</h4>
         </mat-list-item>
-        <mat-list-item routerLink="etablissement/3"> 
-            <mat-icon matListIcon>group</mat-icon>
-            <h4 mat-line>Groupe 3</h4>
-        </mat-list-item>
-        <mat-divider></mat-divider>
-        <h3 mat-subheader>Mes établissements</h3>
-        <mat-list-item>
-            <mat-icon matListIcon>domain</mat-icon>
-            <h4 mat-line>Etablissement 1</h4>
-        </mat-list-item>
-        <mat-list-item>
-            <mat-icon matListIcon>domain</mat-icon>
-            <h4 mat-line>Etablissement 2</h4>
-        </mat-list-item>
-        <mat-list-item> 
-            <mat-icon matListIcon>domain</mat-icon>
-            <h4 mat-line>Etablissement 3</h4>
+        <mat-list-item routerLink="recipe/3"> 
+            <mat-icon matListIcon>restaurant_menu</mat-icon>
+            <h4 mat-line>Recette 3</h4>
         </mat-list-item>
         <mat-divider></mat-divider>
       </mat-list>
