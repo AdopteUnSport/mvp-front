@@ -1,0 +1,8 @@
+.navigation {
+    mat-list-item {
+        cursor: pointer;
+        &:hover {
+            background-color: #e1bee7;                  
+        }
+    }
+}

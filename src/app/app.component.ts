@@ -1,5 +1,7 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatSidenav } from '@angular/material';
+import { NavigationService } from '../app/layout/navigation.service';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +10,16 @@ import { FormControl } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
 
-  constructor() {
+  @ViewChild('sidenav') public sidenav: MatSidenav;
+
+  constructor(
+    private navigationService : NavigationService
+    ) {
 
   }
 
   ngOnInit() {
-    
+    console.log(this.sidenav);
+    this.navigationService.setSidenav(this.sidenav);
   }
 }
