@@ -2,9 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './layout/navigation/navigation.component';
-import { ToolbarComponent } from './layout/toolbar/toolbar.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from "./material/material.module";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -17,8 +14,6 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { ScanComponent } from './scan/scan.component';
 
-import { NavigationService } from './layout/navigation.service';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +24,6 @@ import { NavigationService } from './layout/navigation.service';
     RecipeComponent,
     ShoppingComponent,
     ScanComponent,
-    NavigationComponent,
-    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +34,7 @@ import { NavigationService } from './layout/navigation.service';
     RoutingModule,
     
   ],
-  providers: [NavigationService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
